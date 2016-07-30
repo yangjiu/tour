@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.joysus"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 100
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            moduleName "myLib"    //lib的名称，对应LOCAL_MODULE
+            //stl "stlport_shared"    //对应APP_STL
+            ldLibs "log", "z", "m"  //链接时使用到的库，对应LOCAL_LDLIBS
+            //cFlags 编译gcc的flag，对应LOCAL_CFLAGS
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+        destinationDir file("$projectDir/libs")
+        baseName "Native_Libs2"
+        extension "jar"
+        from fileTree(dir: "libs", include: "**/*.so")
+        into "lib"
+    }
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn(nativeLibsToJar)
+    }
+}
+android { useLibrary 'org.apache.http.legacy' }
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'junit:junit:4.12'
+    compile files('libs/jpush-android-2.1.5.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile files('libs/okhttp-3.1.2.jar')
+    compile files('libs/okio-1.6.0.jar')
+    compile files('libs/fastjson-1.2.4.jar')
+    compile files('libs/umeng_social_sdk.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5756.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/SocialSDK_WeiXin_1.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    compile 'org.apache.httpcomponents:httpclient:4.5'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    compile 'com.android.support.test:runner:0.5'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.github.w446108264:AndroidEmoji:1.0.0'
+    compile project(':chatlib')
+}

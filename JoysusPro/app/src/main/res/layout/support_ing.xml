@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.joysus.jpview.CircularImage
+                android:id="@+id/item_message_iv_vatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/face" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/item_message_tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_message_tv_nickname"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_toLeftOf="@+id/item_message_iv_menu"
+                    android:maxLines="2"
+                    android:text="总筹额："
+                    android:textColor="#666666"
+                    android:textSize="14dip" />
+
+                <TextView
+                    android:id="@+id/item_message_tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/item_message_tv_content"
+                    android:layout_alignParentTop="true"
+                    android:text="给你爱的表达方式"
+                    android:textColor="#333333"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/tv_phonenumber"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/item_message_tv_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@drawable/cornerbt"
+                    android:gravity="center"
+                    android:text="我的号码"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/item_message_tv_content"
+                    android:layout_toEndOf="@+id/item_message_tv_content"
+                    android:layout_toRightOf="@+id/item_message_tv_content"
+                    android:text="￥1200"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fd0000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_message_tv_content_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_toLeftOf="@+id/item_message_iv_menu"
+                    android:maxLines="2"
+                    android:text="已筹集："
+                    android:textColor="#666666"
+                    android:textSize="14dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:gravity="center"
+                    android:text=" 200"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#666666" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/item_message_tv_content_y"
+                    android:layout_toRightOf="@+id/item_message_tv_content_y"
+                    android:src="@mipmap/hheart" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_message_tv_content_w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_toLeftOf="@+id/item_message_iv_menu"
+                    android:maxLines="2"
+                    android:text="完成度："
+                    android:textColor="#666666"
+                    android:textSize="14dip" />
+
+                <com.joysus.jpview.SeekBarEx
+                    android:id="@+id/seekBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/item_message_tv_content_w"
+                    android:layout_toRightOf="@+id/item_message_tv_content_w" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

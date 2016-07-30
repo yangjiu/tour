@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@mipmap/dialog_bg">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="left"
+                android:lineSpacingMultiplier="1.5"
+                android:minHeight="250.0dip" />
+
+            <Button
+                android:id="@+id/btnok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/cornerbt"
+                android:text="欢迎进入"
+                android:textColor="#F9F3C3" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/iv_hy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@mipmap/hthl_m"
+            android:text="我是新手"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_title" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/as_view_feedback"
+                style="@style/viewstyle" />
+
+            <RelativeLayout
+                android:id="@+id/as_rl_suggest"
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/as_tv_left"
+                    style="@style/rgtextleft"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/set_suggest" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/img_description"
+                    android:src="@drawable/imges_114" />
+            </RelativeLayout>
+
+            <View style="@style/viewstyle" />
+
+            <RelativeLayout
+                android:id="@+id/as_rl_about"
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/as_tv_about"
+                    style="@style/rgtextleft"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/set_about" />
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/img_description"
+                    android:src="@drawable/imges_114" />
+            </RelativeLayout>
+
+            <View style="@style/viewstyle" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="26dp"
+                android:background="#f6f6f6"
+                android:gravity="center_vertical">
+
+            </RelativeLayout>
+
+            <View style="@style/viewstyle" />
+
+            <LinearLayout
+                android:id="@+id/as_rl_logout"
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/as_tv_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/set_logout"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View style="@style/viewstyle" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

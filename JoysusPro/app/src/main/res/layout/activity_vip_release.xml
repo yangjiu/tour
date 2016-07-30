@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@mipmap/bg" />
+
+            <LinearLayout
+                android:id="@+id/releasetitle"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@+id/imageView"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="#fd5d5a" />
+
+                <TextView
+                    android:id="@+id/txtRelease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="@string/txtrelease"
+                    android:textColor="#fd5d5a" />
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/lv_release"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/releasetitle" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#20000000">
+        <!-- 返回按钮 -->
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="40dip"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/fanhui" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

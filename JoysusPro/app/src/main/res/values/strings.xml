@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">悦悦汇</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="img_description">icon_img</string>
+    <!-- 设置界面 -->
+    <string name="set_support">支持</string>
+    <string name="set_feedback">发起</string>
+    <string name="set_version">收藏</string>
+    <string name="set_xiangqing">钱包</string>
+    <string name="set_data">设置</string>
+    <string name="set_dial">发起</string>
+    <string name="set_evaluate">评价</string>
+    <string name="set_help">收藏</string>
+    <string name="set_purse">钱包</string>
+    <string name="set_share">设置</string>
+    <string name="set_name">--</string>
+    <string name="set_biaodian">：</string>
+    <string name="set_quanxian">--</string>
+    <string name="set_company">--</string>
+
+    <!--home-->
+    <string name="home_first">首页</string>
+    <string name="chat_msg">消息</string>
+    <string name="chat_group">人脉</string>
+    <string name="home_my">我的</string>
+
+    <!--支持页面-->
+    <string name="sp_ing">进行中</string>
+    <string name="sp_ed">已完成</string>
+    <string name="sp_not_ed">未成功</string>
+
+    <!--收藏-->
+    <string name="collect_vip">会员</string>
+    <string name="collect_project">项目</string>
+
+    <!--评价-->
+    <string name="evlua_to_me">收到的评价</string>
+    <string name="evlua_to_other">做出的评价</string>
+
+    <!--设置-->
+    <string name="set_suggest">意见反馈</string>
+    <string name="set_about">关于</string>
+    <string name="set_logout">退出登录</string>
+    <!--编辑资料-->
+    <string name="base_info">基本资料</string>
+    <string name="base_face">头像</string>
+    <string name="base_nickname">昵称</string>
+    <string name="base_summary">基本资料</string>
+    <string name="base_gender">性别</string>
+    <string name="base_city">所在地</string>
+    <string name="base_person">身份</string>
+    <string name="base_pic">照片</string>
+    <string name="base_card">证件</string>
+
+    <!--证件-->
+    <string name="base_info_cer">身份证</string>
+    <string name="base_stu_cer">学生证</string>
+
+    <!--登录页面-->
+    <string name="login_register">注册</string>
+    <string name="login_forgotpwd">忘记密码?</string>
+    <string name="login_in">登录</string>
+    <!--注册页面-->
+    <string name="re_protocol">我已看过并接受用户协议</string>
+    <string name="re_register">注册</string>
+    <string name="re_code">获取验证码</string>
+    <string name="fg_ok">确定</string>
+
+    <string name="txtrelease">说发布就发布</string>
+    <string name="txtscenery">微景观</string>
+
+    <!--照片选择-->
+    <string name="select_album">选择相册</string>
+    <string name="select_image">选择图片</string>
+    <string name="latest_image">最近照片</string>
+    <string name="photo_album">相册</string>
+    <string name="main_confirm">确定</string>
+    <string name="main_cancel">取消</string>
+    <string name="main_back">返回</string>
+    <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+
+    
+</resources>

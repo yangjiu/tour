@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@mipmap/itembg" />
+
+    <TextView
+        android:id="@+id/txtScenery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/txtscenery"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imgdingwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/dingwei" />
+
+        <TextView
+            android:id="@+id/txtaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/imgdingwei"
+            android:layout_toEndOf="@+id/imgdingwei"
+            android:layout_toRightOf="@+id/imgdingwei"
+            android:gravity="center"
+            android:text="北京大学艺术馆"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/txttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2016年5月30日-2016年6月2日"
+            android:textColor="#666666" />
+
+        <ImageView
+            android:id="@+id/imgtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/txttime"
+            android:layout_toStartOf="@+id/txttime"
+            android:src="@mipmap/shijian" />
+    </RelativeLayout>
+</LinearLayout>
